@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from "../../components/assets/images/logo.svg"
+import { Link } from "react-router-dom"
 
 export const Search = () => {
     // fixed Header
@@ -25,7 +27,7 @@ export const Search = () => {
             <div className='cart'>
               <Link to='/cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
-                <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
+                <span></span>
               </Link>
             </div>
           </div>
@@ -34,3 +36,7 @@ export const Search = () => {
     </>
   )
 }
+
+
+
+export default Search
